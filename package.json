@@ -1,0 +1,39 @@
+{
+  "name": "bedrock-litellm-proxy",
+  "version": "1.0.0",
+  "description": "A Docker-based LiteLLM proxy server for accessing AWS Bedrock Claude models with AWS Vault credential management",
+  "main": "run.ps1",
+  "scripts": {
+    "start": "powershell -ExecutionPolicy Bypass -File ./run.ps1",
+    "docker": "powershell -ExecutionPolicy Bypass -File ./setup-docker.ps1",
+    "docker:ecs": "powershell -ExecutionPolicy Bypass -File ./run-docker.ps1",
+    "docker:iam": "powershell -ExecutionPolicy Bypass -File ./run-docker-iam.ps1",
+    "docker:auto": "powershell -ExecutionPolicy Bypass -File ./run-docker-auto-restart.ps1"
+  },
+  "keywords": [
+    "litellm",
+    "aws",
+    "bedrock",
+    "claude",
+    "anthropic",
+    "proxy",
+    "docker",
+    "aws-vault",
+    "ai",
+    "llm"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "docker": ">=20.0.0"
+  },
+  "os": [
+    "win32",
+    "linux",
+    "darwin"
+  ]
+}

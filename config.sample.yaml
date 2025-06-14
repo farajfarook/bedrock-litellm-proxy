@@ -1,0 +1,19 @@
+model_list:
+  - model_name: claude-4-sonnet
+    litellm_params:
+      model: bedrock/arn:aws:bedrock:YOUR_REGION:YOUR_ACCOUNT_ID:inference-profile/apac.anthropic.claude-sonnet-4-20250514-v1:0
+      aws_access_key_id: os.environ/AWS_ACCESS_KEY_ID
+      aws_secret_access_key: os.environ/AWS_SECRET_ACCESS_KEY
+      aws_region_name: os.environ/AWS_REGION_NAME
+  - model_name: claude-3-5-sonnet
+    litellm_params:
+      model: bedrock/arn:aws:bedrock:YOUR_REGION:YOUR_ACCOUNT_ID:inference-profile/apac.anthropic.claude-3-5-sonnet-20241022-v2:0
+      aws_access_key_id: os.environ/AWS_ACCESS_KEY_ID
+      aws_secret_access_key: os.environ/AWS_SECRET_ACCESS_KEY
+      aws_region_name: os.environ/AWS_REGION_NAME
+  - model_name: claude-3-7-sonnet
+    litellm_params:
+      model: bedrock/arn:aws:bedrock:YOUR_REGION:YOUR_ACCOUNT_ID:inference-profile/apac.anthropic.claude-3-7-sonnet-20250219-v1:0
+      aws_access_key_id: os.environ/AWS_ACCESS_KEY_ID
+      aws_secret_access_key: os.environ/AWS_SECRET_ACCESS_KEY
+      aws_region_name: os.environ/AWS_REGION_NAME
