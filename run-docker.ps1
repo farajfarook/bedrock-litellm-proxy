@@ -18,6 +18,6 @@ Write-Host "ECS credential server started on port 9999"
 Write-Host "Starting Docker containers..."
 
 # Start the Docker containers
-docker-compose up --build
+docker-compose up --build -d
 
 Write-Host "Docker containers started. LiteLLM is available at http://localhost:4000"

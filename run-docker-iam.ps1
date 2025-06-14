@@ -39,4 +39,4 @@ Write-Host "Credentials exported to .env file"
 Write-Host "Starting Docker containers with long-term credentials..."
 
 # Start Docker with the exported credentials
-docker-compose -f docker-compose-iam.yml up --build
+docker-compose -f docker-compose-iam.yml up --build -d
